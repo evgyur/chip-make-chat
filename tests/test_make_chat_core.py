@@ -51,7 +51,7 @@ class ConfigMutationTests(unittest.TestCase):
         self.assertEqual(telegram["groupAllowFrom"], [OWNER_USER_ID])
         self.assertEqual(
             telegram["groups"]["-100123"],
-            {"enabled": True, "requireMention": True},
+            {"enabled": True, "requireMention": False},
         )
 
 

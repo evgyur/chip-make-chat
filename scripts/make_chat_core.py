@@ -33,7 +33,7 @@ def apply_group_policy(config: dict, chat_id: str) -> dict:
     telegram = updated.setdefault("channels", {}).setdefault("telegram", {})
     telegram["groupAllowFrom"] = [OWNER_USER_ID]
     groups = telegram.setdefault("groups", {})
-    groups[chat_id] = {"enabled": True, "requireMention": True}
+    groups[chat_id] = {"enabled": True, "requireMention": False}
     return updated
 
 

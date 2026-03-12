@@ -59,6 +59,6 @@ On success, report:
 
 - owner only
 - direct-message only
-- created groups stay `requireMention: true`
+- created groups stay `requireMention: false` for the owner-only allowlisted chats
 - use lock + atomic config writes
 - do not claim success until the real bot reply is visible in the new chat
